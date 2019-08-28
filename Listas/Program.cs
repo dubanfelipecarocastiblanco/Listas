@@ -50,6 +50,9 @@ namespace Listas
 
             Console.Write("Eliminar numeros: ");
             numeros.Remove(0);
+
+            Console.WriteLine();
+
             foreach (var item in numeros)
             {
                 Console.WriteLine(item);
