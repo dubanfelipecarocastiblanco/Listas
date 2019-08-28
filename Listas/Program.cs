@@ -9,6 +9,7 @@ namespace Listas
         {
             List<int> numeros = new List<int>();
 
+            numeros.Add(0);
             numeros.Add(1);
             numeros.Add(2);
             numeros.Add(3);
@@ -29,6 +30,7 @@ namespace Listas
 
             Console.WriteLine();
 
+            Console.WriteLine("Esta es la lista de los dias de la semana: ");
 
             var DiasSemanas = new List<string>();
             DiasSemanas.Add("Lunes");
@@ -44,6 +46,14 @@ namespace Listas
                 Console.WriteLine(item2);
             }
 
+            Console.WriteLine();
+
+            Console.Write("Eliminar numeros: ");
+            numeros.Remove(0);
+            foreach (var item in numeros)
+            {
+                Console.WriteLine(item);
+            }
         }
     }
 }
